@@ -1,7 +1,7 @@
 // src/components/Sidebar.jsx
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { Menu, X } from 'lucide-react'; // o usa react-icons
+import { Menu, X } from 'lucide-react';
 
 export default function Sidebar() {
   const location = useLocation();

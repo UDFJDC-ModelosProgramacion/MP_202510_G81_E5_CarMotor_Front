@@ -1,4 +1,4 @@
-/* home.css */
+
 
 /* Contenedor principal con fondo e imagen */
 .home-container {
@@ -12,7 +12,7 @@
 
 /* Imagen de fondo */
 .home-background {
-  background-image: url('../assets/fondo.jpg'); /* ✅ Esto funciona con Webpack */
+  background-image: url('../assets/fondo.jpg'); 
   background-size: cover;
   background-position: center;
   filter: blur(4px);
@@ -40,11 +40,11 @@
   animation: fadeInUp 1s ease-out both;
 }
 
-/* Título grande y llamativo */
+/* Título */
 .home-title {
   font-size: 3rem;
   font-weight: bold;
-  color: #facc15; /* amarillo dorado */
+  color: #facc15; 
   text-shadow: 2px 2px 6px #000;
   margin-bottom: 1rem;
 }
@@ -52,7 +52,7 @@
 /* Subtítulo descriptivo */
 .home-subtitle {
   font-size: 1.25rem;
-  color: #e5e7eb; /* gris claro */
+  color: #e5e7eb;
   text-shadow: 1px 1px 2px #000;
   max-width: 700px;
   margin: 0 auto;

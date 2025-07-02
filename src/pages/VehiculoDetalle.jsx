@@ -38,14 +38,14 @@ export default function VehiculoDetalle() {
   return (
     <div className="detalle-container">
       
-      {/* 🧭 Migas de pan */}
+      {}
       <nav className="breadcrumb">
         <Link to="/">Inicio</Link> / <Link to="/vehiculos">Vehículos</Link> / <span>{vehiculo.marca} {vehiculo.modelo}</span>
       </nav>
 
       <div className="detalle-contenido">
         
-        {/* 📷 Imagen a la izquierda */}
+        {}
         {vehiculo.imagenes?.length > 0 && (
           <div className="detalle-imagen">
             <button className="arrow left" onClick={anteriorImagen}>‹</button>
@@ -62,7 +62,7 @@ export default function VehiculoDetalle() {
           </div>
         )}
 
-        {/* 🧾 Texto a la derecha */}
+        {}
         <div className="detalle-texto">
           <h1>{vehiculo.marca} {vehiculo.modelo}</h1>
           <p><strong>Placa:</strong> {vehiculo.placa}</p>
