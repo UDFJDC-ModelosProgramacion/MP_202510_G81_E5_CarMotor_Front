@@ -1,0 +1,71 @@
+/* home.css */
+
+/* Contenedor principal con fondo e imagen */
+.home-container {
+  position: relative;
+  min-height: 100vh;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Imagen de fondo */
+.home-background {
+  background-image: url('../assets/fondo.jpg'); /* ✅ Esto funciona con Webpack */
+  background-size: cover;
+  background-position: center;
+  filter: blur(4px);
+  opacity: 0.3;
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+
+/* Capa oscura encima para mejor contraste */
+.home-overlay {
+  position: absolute;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.6);
+  z-index: 1;
+}
+
+/* Contenido encima */
+.home-content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  padding: 2rem;
+  animation: fadeInUp 1s ease-out both;
+}
+
+/* Título grande y llamativo */
+.home-title {
+  font-size: 3rem;
+  font-weight: bold;
+  color: #facc15; /* amarillo dorado */
+  text-shadow: 2px 2px 6px #000;
+  margin-bottom: 1rem;
+}
+
+/* Subtítulo descriptivo */
+.home-subtitle {
+  font-size: 1.25rem;
+  color: #e5e7eb; /* gris claro */
+  text-shadow: 1px 1px 2px #000;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Animación de entrada suave */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

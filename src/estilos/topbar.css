@@ -1,0 +1,47 @@
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.75rem 1.5rem;
+  background-color: #1f1f1f;
+  color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.4);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+
+
+/* Logo a la derecha del botón */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-weight: bold;
+  color: #f7c948;
+  margin-left: 1.5rem;
+}
+
+.logo img {
+  height: 70px;
+  width: auto;
+  object-fit: contain;
+}
+
+/* Navegación */
+nav {
+  display: flex;
+  gap: 1rem;
+  margin-left: auto;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #f7c948;
+}

@@ -1,0 +1,174 @@
+/* Contenedor principal */
+.detalle-container {
+  background: #1e1e1e;
+  padding: 2rem;
+  border-radius: 12px;
+  width: 90vw;
+  height: 85vh;
+  margin: 2rem auto;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  color: #f5f5f5;
+}
+
+/* Migas de pan */
+.breadcrumb {
+  margin-bottom: 1rem;
+  font-size: 0.95rem;
+  color: #aaa;
+}
+
+.breadcrumb a {
+  color: #f5c000;
+  text-decoration: none;
+}
+
+.breadcrumb span {
+  color: #fff;
+  font-weight: bold;
+}
+
+/* Contenido general */
+.detalle-contenido {
+  flex: 1;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: nowrap;
+  align-items: stretch;
+  overflow-y: auto;
+  justify-content: space-between;
+}
+
+/* Imagen del vehículo */
+.detalle-imagen {
+  flex-shrink: 0;
+  width: 45%;
+  width: 600px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.imagen-contenedor {
+  width: 100%;
+  text-align: center;
+}
+
+.detalle-imagen img {
+  width: 100%;
+  max-height: 2600px;
+  object-fit: contain;
+  border-radius: 12px;
+  background: #2a2a2a;
+  padding: 0.5rem;
+}
+
+/* Flechas de navegación */
+.arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  background:   rgba(45, 43, 43, 0.451);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  z-index: 2;
+  color: #efefef;
+  transition: background 0.3s;
+}
+
+.arrow.left {
+  left: 10px;
+}
+
+.arrow.right {
+  right: 10px;
+}
+
+.arrow:hover {
+  background: rgba(255, 255, 255, 0.3);
+}
+
+/* Texto */
+.detalle-texto {
+  flex-grow: 1;
+  text-align: center;
+  align-self: center;
+}
+
+.detalle-texto h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #f5c000;
+}
+
+.detalle-texto p {
+  margin: 0.5rem 0;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.asegurado {
+  color: #00e676;
+}
+
+/* Título debajo de la imagen */
+.imagen-titulo {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #ccc;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .detalle-contenido {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .arrow.left {
+    left: 5px;
+  }
+
+  .arrow.right {
+    right: 5px;
+  }
+
+  .detalle-texto {
+    margin-top: 1.5rem;
+    text-align: center;
+  }
+}
+.historial-link {
+  margin-top: 1rem;
+  background-color: transparent;
+  border: none;
+  color: #007bff;
+  cursor: pointer;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.mantenimientos-section {
+  margin: 2rem auto;               
+  background-color: #2b2b2b;
+  border: 1px solid #444;
+  padding: 1rem;
+  border-radius: 8px;
+  color: #ddd;
+  max-width: 500px;                
+  box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+}
+
+.mantenimiento-item {
+  margin-bottom: 1rem;
+  border-bottom: 1px dashed #555; 
+  padding-bottom: 0.5rem;
+}
+

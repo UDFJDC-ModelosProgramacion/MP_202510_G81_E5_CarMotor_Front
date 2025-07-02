@@ -1,0 +1,126 @@
+  .filtros {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1f1f1f;
+    padding: 1rem 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    border: 1px solid #333;
+    color: #fff;
+    gap: 1rem;
+  }
+
+  .filtros label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+    color: #f7c948;
+  }
+
+  .filtros select,
+  .filtros input {
+    background-color: #2c2c2c;
+    color: #fff;
+    border: 1px solid #444;
+    border-radius: 5px;
+    padding: 0.5rem 0.75rem;
+    min-width: 150px;
+    transition: all 0.2s ease-in-out;
+  }
+
+  .filtros select:focus,
+  .filtros input:focus {
+    outline: none;
+    border-color: #f7c948;
+    box-shadow: 0 0 0 2px rgba(247, 201, 72, 0.3);
+  }
+
+  .vehiculos-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .vehiculo-card {
+    background-color: #2b2b2b;
+    border: 1px solid #3a3a3a;
+    border-radius: 10px;
+    padding: 1rem;
+    transition: transform 0.2s ease;
+  }
+
+  .vehiculo-card:hover {
+    transform: scale(1.02);
+    border-color: #f7c948;
+  }
+
+  .vehiculo-card h2 {
+    color: #f7c948;
+    margin-bottom: 0.5rem;
+  }
+
+  .vehiculo-card p {
+    color: #ccc;
+    margin: 0.25rem 0;
+  }
+
+  .fotos {
+    display: flex;
+    gap: 0.5rem;
+    margin-top: 0.75rem;
+  }
+
+  .fotos img {
+    width: 80px;
+    height: 60px;
+    object-fit: cover;
+    border-radius: 5px;
+    border: 1px solid #444;
+  }
+.asesor-info {
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center;      /* Centra verticalmente */
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  padding: 0.75rem 1rem;
+  margin-top: 1rem;
+  border: 1px solid #333;
+  gap: 0.75rem;
+  text-align: center; /* Centra el texto internamente */
+  width: 100%;
+}
+
+.asesor-text {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centra contenido horizontalmente */
+  justify-content: center;
+}
+
+.asesor-text h3 {
+  margin: 0;
+  font-size: 1rem;
+  color: #f7c948;
+}
+
+.asesor-text p {
+  margin: 2px 0;
+  font-size: 0.85rem;
+  color: #ccc;
+}
+.asegurado-info {
+  display: flex;
+  justify-content: center;   /* Centrado horizontal */
+  align-items: center;       /* Centrado vertical */
+  margin-top: 0.75rem;
+  text-align: center;
+  width: 100%;
+}
+
+.asegurado-texto {
+  font-weight: bold;
+  color: #28a745; /* Verde */
+  font-size: 0.95rem;
+}
